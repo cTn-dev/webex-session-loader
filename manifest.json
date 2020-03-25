@@ -1,0 +1,13 @@
+{
+  "name": "Webex Teams Session Loader",
+  "description": "Persist token between sessions",
+  "version": "0.1",
+  "content_scripts": [
+    {
+      "matches": ["https://teams.webex.com/*"],
+      "run_at": "document_idle",
+      "js": ["loader.js"]
+    }
+  ],
+  "manifest_version": 2
+}
